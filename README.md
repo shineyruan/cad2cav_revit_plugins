@@ -10,7 +10,7 @@ All plugins are developed by [pyRevit](https://github.com/eirannejad/pyRevit). T
 
 1. Clone this repo to anywhere in the system.
 2. Follow [pyRevit's user extension installation tutorial](https://www.notion.so/Create-Your-First-Command-2509b43e28bd498fba937f5c1be7f485) to set `cad2cav_revit_plugins` as the base folder of the pyRevit extensions.
-3. Reload pyRevit. You should see a "ExportBuildingStructure" tab in the menu bar.
+3. Reload pyRevit. You should see an "ExportBuildingStructure" tab in the menu bar.
 4. Open the tab and hit "Export".
 
 ## For Developers
