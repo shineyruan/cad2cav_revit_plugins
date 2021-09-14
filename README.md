@@ -6,11 +6,11 @@ Tested on:
 - Autodesk Revit 2022
 
 ## Usage
-All plugins are developed by [pyRevit](https://github.com/eirannejad/pyRevit). To use this plugin, users must have a working version of pyRevit and Autodesk Revit installed in the system.
+All plugins are developed by [pyRevit](https://github.com/eirannejad/pyRevit). To use these plugins, users must have a working version of pyRevit and Autodesk Revit installed in the system.
 
 1. Clone this repo to anywhere in the system.
 2. Follow [pyRevit's user extension installation tutorial](https://www.notion.so/Create-Your-First-Command-2509b43e28bd498fba937f5c1be7f485) to set `cad2cav_revit_plugins` as the base folder of the pyRevit extensions.
-3. Reload pyRevit. You should see an extra tab in the menu bar.
+3. Reload pyRevit. You should see a "ExportBuildingStructure" tab in the menu bar.
 4. Open the tab and hit "Export".
 
 ## For Developers
