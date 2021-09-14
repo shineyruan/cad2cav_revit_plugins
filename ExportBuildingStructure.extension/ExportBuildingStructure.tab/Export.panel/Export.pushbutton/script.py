@@ -37,5 +37,6 @@ for wall in wall_collector:
 for door in door_collector:
   loc_param = door.Location
   if isinstance(loc_param, DB.LocationPoint):
-    print("door,{},{},{}".format(loc_param.Point.X, loc_param.Point.Y,
-                                 loc_param.Point.Z))
+    print("door,{},{},{},0.0,0.0,0.0".format(loc_param.Point.X,
+                                             loc_param.Point.Y,
+                                             loc_param.Point.Z))
