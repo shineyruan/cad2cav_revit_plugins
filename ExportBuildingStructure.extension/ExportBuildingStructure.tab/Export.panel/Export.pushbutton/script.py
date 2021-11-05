@@ -26,27 +26,28 @@ for wall in wall_collector:
   if isinstance(loc_param, DB.LocationCurve):
     curve = loc_param.Curve
     if isinstance(curve, DB.Line):
-      print("wall,{},{},{},{},{},{}".format(FEET2METER * curve.GetEndPoint(0).X,
-                                            FEET2METER * curve.GetEndPoint(0).Y,
-                                            FEET2METER * curve.GetEndPoint(0).Z,
-                                            FEET2METER * curve.GetEndPoint(1).X,
-                                            FEET2METER * curve.GetEndPoint(1).Y,
-                                            FEET2METER *
-                                            curve.GetEndPoint(1).Z))
+      print("wall,{},{},{},{},{},{},0.0".format(
+          FEET2METER * curve.GetEndPoint(0).X,
+          FEET2METER * curve.GetEndPoint(0).Y,
+          FEET2METER * curve.GetEndPoint(0).Z,
+          FEET2METER * curve.GetEndPoint(1).X,
+          FEET2METER * curve.GetEndPoint(1).Y,
+          FEET2METER * curve.GetEndPoint(1).Z))
       print("\n")
 
 # iterate door and collect door shape
 for door in door_collector:
   loc_param = door.Location
   if isinstance(loc_param, DB.LocationPoint):
-    print("door,{},{},{},0.0,0.0,0.0".format(FEET2METER * loc_param.Point.X,
-                                             FEET2METER * loc_param.Point.Y,
-                                             FEET2METER * loc_param.Point.Z))
+    print("door,{},{},{},0.0,0.0,0.0,{}".format(FEET2METER * loc_param.Point.X,
+                                                FEET2METER * loc_param.Point.Y,
+                                                FEET2METER * loc_param.Point.Z,
+                                                loc_param.Rotation))
 
 # iterate window and collect window shape
 for window in window_collector:
   loc_param = window.Location
   if isinstance(loc_param, DB.LocationPoint):
-    print("window,{},{},{},0.0,0.0,0.0".format(FEET2METER * loc_param.Point.X,
-                                               FEET2METER * loc_param.Point.Y,
-                                               FEET2METER * loc_param.Point.Z))
+    print("window,{},{},{},0.0,0.0,0.0,{}".format(
+        FEET2METER * loc_param.Point.X, FEET2METER * loc_param.Point.Y,
+        FEET2METER * loc_param.Point.Z, loc_param.Rotation))
